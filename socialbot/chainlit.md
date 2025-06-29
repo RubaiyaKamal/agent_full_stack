@@ -1,5 +1,8 @@
 # ChatAssist AI
 
-A smart chatbot powered by OpenAI & Gemini.
+A GPT/Gemini-powered WhatsApp-style chatbot.
 
-[history](action)
+This chatbot supports:
+- 💬 Text-based conversation
+- 🤖 OpenAI GPT-4 or Gemini Pro
+- 🌐 Ready for deployment on Hugging Face

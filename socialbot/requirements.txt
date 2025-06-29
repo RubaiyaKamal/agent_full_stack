@@ -1,5 +1,7 @@
 openai
-chainlit
 google-generativeai
+chainlit
 openai-agents
 python-dotenv
+fastapi
+

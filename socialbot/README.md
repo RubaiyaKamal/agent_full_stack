@@ -1,24 +1,28 @@
 ---
-title: ChatAssist AI 🤖
-emoji: 💬
-colorFrom: blue
-colorTo: purple
+title: ChatAssist AI
+emoji: 🤖
+colorFrom: indigo
+colorTo: blue
 sdk: docker
-sdk_version: "1.0"
-app_file: main.py
+app_file: Dockerfile
 pinned: false
 ---
 
 
-# ChatAssist AI 🤖
+# ChatAssist AI 🤖💬
 
-This is a WhatsApp-style AI chatbot built using Python, Chainlit, OpenAI Agents SDK, and Google Gemini.
+Welcome to **ChatAssist AI**, a Chainlit-powered chatbot for WhatsApp/Messenger-style conversations.
 
-## 🧠 Features
-- Supports OpenAI & Gemini
-- Chat history per user
-- Profiles with name recognition
+## 🌟 Features
+- ✅ OpenAI GPT-4 or Google Gemini
+- ✅ Chat history using Chainlit session
+- ✅ FastAPI backend (optional)
+- ✅ Hugging Face Spaces ready
 
-## 🚀 Run locally
+## 🛠 Setup (Local)
+
 ```bash
+uv venv
+source .venv/bin/activate
+pip install -r requirements.txt
 chainlit run main.py -w

@@ -10,7 +10,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Choose provider: "openai" or "gemini"
-PROVIDER = "openai"  # or "gemini"
+PROVIDER = "gemini"  # or "openai"
 
 async def run_chatbot(prompt: str) -> str:
     if PROVIDER == "openai":
@@ -21,7 +21,7 @@ async def run_chatbot(prompt: str) -> str:
         return response.choices[0].message["content"]
 
     elif PROVIDER == "gemini":
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(prompt)
         return response.text
 

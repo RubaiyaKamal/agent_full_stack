@@ -1,6 +1,5 @@
-// chainlit.config.js
 module.exports = {
   files: {
-    path: './user_uploads'
+    path: '/home/user/app/user_uploads'
   }
 };
